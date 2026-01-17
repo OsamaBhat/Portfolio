@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Osama Umar | Creative Developer & Data Engineer</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               colors: {
+                  'neo-black': '#1a1a1a',
+                  'neo-white': '#f5f5f5',
+                  'neo-red': '#FF9999',
+                  'neo-pink': '#FFB6C1',
+                  'neo-green': '#90EE90',
+                  'neo-yellow': '#FFFF99',
+               },
+               fontFamily: {
+                  'space': ['"Space Grotesk"', 'sans-serif'],
+               },
+               boxShadow: {
+                  'neo': '4px 4px 0px 0px rgba(0,0,0,1)',
+                  'neo-hover': '8px 8px 0px 0px rgba(0,0,0,1)',
+               }
+            }
+         }
+      }
+   </script>
+</head>
+
+<body class="bg-neo-white text-neo-black font-space">
+   <!-- Header -->
+   <header class="border-b-4 border-black sticky top-0 bg-neo-white z-50">
+      <nav class="container mx-auto px-4 py-4 flex justify-between items-center relative">
+         <a href="#"
+            class="text-2xl font-bold uppercase tracking-tighter hover:bg-neo-yellow px-2 border-2 border-transparent hover:border-black transition-all">Osama
+            Umar</a>
+         <div class="hidden md:flex gap-6">
+            <a href="#about"
+               class="hover:underline decoration-4 decoration-neo-red underline-offset-4 font-bold text-lg">About</a>
+            <a href="#skills"
+               class="hover:underline decoration-4 decoration-neo-green underline-offset-4 font-bold text-lg">Skills</a>
+            <a href="#experience"
+               class="hover:underline decoration-4 decoration-neo-pink underline-offset-4 font-bold text-lg">Experience</a>
+            <a href="#projects"
+               class="hover:underline decoration-4 decoration-neo-yellow underline-offset-4 font-bold text-lg">Projects</a>
+            <a href="#contact"
+               class="hover:underline decoration-4 decoration-black underline-offset-4 font-bold text-lg">Contact</a>
+         </div>
+         <!-- Mobile Menu Button -->
+         <button id="mobile-menu-btn"
+            class="md:hidden border-2 border-black p-2 bg-neo-pink shadow-neo active:shadow-none active:translate-x-1 active:translate-y-1 transition-all">
+            MENU
+         </button>
+
+         <!-- Mobile Menu -->
+         <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-neo-white border-b-4 border-black flex-col p-4 shadow-neo z-40">
+            <a href="#about"
+               class="block py-2 text-xl font-bold hover:bg-neo-red px-2 border-2 border-transparent hover:border-black">About</a>
+            <a href="#skills"
+               class="block py-2 text-xl font-bold hover:bg-neo-green px-2 border-2 border-transparent hover:border-black">Skills</a>
+            <a href="#experience"
+               class="block py-2 text-xl font-bold hover:bg-neo-pink px-2 border-2 border-transparent hover:border-black">Experience</a>
+            <a href="#projects"
+               class="block py-2 text-xl font-bold hover:bg-neo-yellow px-2 border-2 border-transparent hover:border-black">Projects</a>
+            <a href="#contact"
+               class="block py-2 text-xl font-bold hover:bg-neo-white border-2 border-transparent hover:border-black">Contact</a>
+         </div>
+      </nav>
+   </header>
+
+   <main>
+      <!-- Hero Section -->
+      <section class="min-h-[80vh] flex flex-col md:flex-row items-center border-b-4 border-black bg-neo-white">
+         <div class="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center border-r-0 md:border-r-4 border-black">
+            <div
+               class="bg-neo-red p-2 inline-block border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-6 transform rotate-2 w-max">
+               <span class="font-bold text-sm tracking-widest uppercase">Available for work</span>
+            </div>
+            <h1 class="text-6xl md:text-8xl font-bold leading-none mb-6">
+               OSAMA <br>
+               <span class="text-transparent bg-clip-text bg-gradient-to-r from-neo-pink to-neo-red"
+                  style="-webkit-text-stroke: 2px black;">UMAR</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-medium mb-8 max-w-lg">
+               Data Engineer & Creative Developer based in Srinagar, India. Building robust pipelines and brutalist web
+               experiences.
+            </p>
+            <div class="flex gap-4">
+               <a href="#contact"
+                  class="bg-neo-green px-8 py-4 border-2 border-black shadow-neo hover:shadow-neo-hover hover:-translate-y-1 hover:-translate-x-1 transition-all font-bold text-lg uppercase">
+                  Let's Talk
+               </a>
+               <a href="#projects"
+                  class="bg-white px-8 py-4 border-2 border-black shadow-neo hover:shadow-neo-hover hover:-translate-y-1 hover:-translate-x-1 transition-all font-bold text-lg uppercase">
+                  View Work
+               </a>
+            </div>
+         </div>
+         <div
+            class="w-full md:w-1/2 h-96 md:h-auto bg-neo-yellow flex items-center justify-center p-8 overflow-hidden relative">
+            <!-- Decorative Pattern -->
+            <div class="absolute inset-0 opacity-10"
+               style="background-image: radial-gradient(circle, #000 2px, transparent 2px); background-size: 20px 20px;">
+            </div>
+            <img src="osama1.png" alt="Osama Umar"
+               class="w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-black rounded-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] z-10 bg-neo-pink">
+         </div>
+      </section>
+
+      <!-- Marquee Section -->
+      <div class="bg-neo-black text-neo-white py-4 border-b-4 border-black overflow-hidden whitespace-nowrap">
+         <div class="animate-marquee inline-block">
+            <span class="text-2xl font-bold mx-8">PYTHON</span>
+            <span class="text-2xl font-bold mx-8 text-neo-green">♦</span>
+            <span class="text-2xl font-bold mx-8">SQL</span>
+            <span class="text-2xl font-bold mx-8 text-neo-pink">♦</span>
+            <span class="text-2xl font-bold mx-8">DATA ENGINEERING</span>
+            <span class="text-2xl font-bold mx-8 text-neo-yellow">♦</span>
+            <span class="text-2xl font-bold mx-8">REACT JS</span>
+            <span class="text-2xl font-bold mx-8 text-neo-red">♦</span>
+            <span class="text-2xl font-bold mx-8">APACHE SPARK</span>
+            <span class="text-2xl font-bold mx-8 text-neo-green">♦</span>
+            <span class="text-2xl font-bold mx-8">ETL PIPELINES</span>
+            <span class="text-2xl font-bold mx-8 text-neo-pink">♦</span>
+            <span class="text-2xl font-bold mx-8">PYTHON</span>
+            <span class="text-2xl font-bold mx-8 text-neo-green">♦</span>
+            <span class="text-2xl font-bold mx-8">SQL</span>
+            <span class="text-2xl font-bold mx-8 text-neo-pink">♦</span>
+            <span class="text-2xl font-bold mx-8">DATA ENGINEERING</span>
+            <span class="text-2xl font-bold mx-8 text-neo-yellow">♦</span>
+            <span class="text-2xl font-bold mx-8">REACT JS</span>
+         </div>
+      </div>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 px-4 md:px-0 border-b-4 border-black bg-neo-pink">
+         <div class="container mx-auto max-w-4xl">
+            <div class="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+               <h2 class="text-4xl md:text-5xl font-bold mb-6 uppercase border-b-4 border-black inline-block pb-2">About
+                  Me</h2>
+               <p class="text-lg md:text-xl leading-relaxed font-medium">
+                  Enthusiastic and detail-oriented aspiring <span
+                     class="bg-neo-yellow px-1 border-black border-b-2">Data Engineer</span> with a strong foundation in
+                  Python, SQL, and data processing. Skilled in building basic ETL pipelines and working with tools like
+                  Pandas, MySQL, and Apache Spark. Quick learner with a solid understanding of data warehousing and
+                  cloud concepts. Currently based in Srinagar, ready to tackle complex data challenges.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="py-20 bg-neo-white border-b-4 border-black">
+         <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center uppercase"><span
+                  class="bg-neo-green px-2 border-2 border-black shadow-neo">My Arsenal</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+               <!-- Tech Stack Card -->
+               <div class="border-4 border-black bg-white p-6 shadow-neo hover:shadow-neo-hover transition-all">
+                  <div
+                     class="bg-neo-black text-neo-white p-2 text-center font-bold text-xl mb-4 border-2 border-black -mt-10 mr-10 shadow-[4px_4px_0px_0px_#FF9999]">
+                     LANGUAGES</div>
+                  <div class="flex flex-wrap gap-2">
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-neo-red">Python</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">Java</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">SQL</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-neo-yellow">HTML/CSS</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">JavaScript</span>
+                  </div>
+               </div>
+
+               <!-- Tools Card -->
+               <div class="border-4 border-black bg-white p-6 shadow-neo hover:shadow-neo-hover transition-all">
+                  <div
+                     class="bg-neo-black text-neo-white p-2 text-center font-bold text-xl mb-4 border-2 border-black -mt-10 mr-10 shadow-[4px_4px_0px_0px_#90EE90]">
+                     DATA & TOOLS</div>
+                  <div class="flex flex-wrap gap-2">
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-neo-green">Pandas</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">NumPy</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">MySQL</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-neo-pink">Apache Spark</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">Power BI</span>
+                  </div>
+               </div>
+
+               <!-- Cloud & Others Card -->
+               <div class="border-4 border-black bg-white p-6 shadow-neo hover:shadow-neo-hover transition-all">
+                  <div
+                     class="bg-neo-black text-neo-white p-2 text-center font-bold text-xl mb-4 border-2 border-black -mt-10 mr-10 shadow-[4px_4px_0px_0px_#FFFF99]">
+                     CLOUD & HARDWARE</div>
+                  <div class="flex flex-wrap gap-2">
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-neo-yellow">GCP</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">Arduino</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">Modular PLC</span>
+                     <span class="px-3 py-1 border-2 border-black font-bold bg-white">MS Dynamics</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Experience Section -->
+      <section id="experience" class="py-20 border-b-4 border-black bg-neo-yellow">
+         <div class="container mx-auto px-4 max-w-5xl">
+            <h2
+               class="text-4xl md:text-5xl font-bold mb-12 uppercase bg-white border-4 border-black p-2 inline-block shadow-neo text-center">
+               Experience</h2>
+
+            <div class="space-y-8">
+               <!-- Job 1 -->
+               <div
+                  class="bg-white border-4 border-black p-6 shadow-neo flex flex-col md:flex-row gap-4 hover:-translate-y-1 transition-transform">
+                  <div class="w-full md:w-1/4">
+                     <h3 class="font-bold text-xl bg-neo-pink inline-block px-1 border-2 border-black mb-2">06/2025 -
+                        Present</h3>
+                     <p class="font-bold text-gray-500">Bangalore</p>
+                  </div>
+                  <div class="w-full md:w-3/4 border-l-0 md:border-l-4 border-black md:pl-6 border-dashed">
+                     <h3 class="text-2xl font-bold uppercase mb-1">Technical Support Engineer</h3>
+                     <h4 class="text-xl font-bold text-gray-600 mb-4">Joules to Watts</h4>
+                     <p class="font-medium">Providing technical expertise and support solutions.</p>
+                  </div>
+               </div>
+
+               <!-- Job 2 -->
+               <div
+                  class="bg-white border-4 border-black p-6 shadow-neo flex flex-col md:flex-row gap-4 hover:-translate-y-1 transition-transform">
+                  <div class="w-full md:w-1/4">
+                     <h3 class="font-bold text-xl bg-neo-green inline-block px-1 border-2 border-black mb-2">01/2025 -
+                        05/2025</h3>
+                     <p class="font-bold text-gray-500">Bangalore</p>
+                  </div>
+                  <div class="w-full md:w-3/4 border-l-0 md:border-l-4 border-black md:pl-6 border-dashed">
+                     <h3 class="text-2xl font-bold uppercase mb-1">Lenovo Technical Support Engineer</h3>
+                     <h4 class="text-xl font-bold text-gray-600 mb-4">Concentrix</h4>
+                     <ul class="list-disc list-inside font-medium space-y-1">
+                        <li>Analyzed technical support data to identify trends and common issues.</li>
+                        <li>Utilized MS Dynamics and Power BI for reporting and dashboard creation.</li>
+                        <li>Collaborated with teams to implement data-driven improvements in product reliability.</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <!-- Job 3 -->
+               <div
+                  class="bg-white border-4 border-black p-6 shadow-neo flex flex-col md:flex-row gap-4 hover:-translate-y-1 transition-transform">
+                  <div class="w-full md:w-1/4">
+                     <h3 class="font-bold text-xl bg-neo-red inline-block px-1 border-2 border-black mb-2">07/2022 -
+                        08/2022</h3>
+                     <p class="font-bold text-gray-500">Srinagar</p>
+                  </div>
+                  <div class="w-full md:w-3/4 border-l-0 md:border-l-4 border-black md:pl-6 border-dashed">
+                     <h3 class="text-2xl font-bold uppercase mb-1">Telecom Internship</h3>
+                     <h4 class="text-xl font-bold text-gray-600 mb-4">BSNL</h4>
+                     <p class="font-medium">Gained practical knowledge of GSM architecture and Optic Fiber network
+                        maintenance.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-20 border-b-4 border-black bg-neo-white">
+         <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center uppercase"><span
+                  class="bg-neo-red px-2 border-2 border-black shadow-neo text-white">Selected Works</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+               <!-- Project 1 -->
+               <div class="group border-4 border-black bg-white shadow-neo hover:shadow-neo-hover transition-all">
+                  <div
+                     class="h-48 bg-neo-black border-b-4 border-black flex items-center justify-center overflow-hidden">
+                     <!-- Placeholder Visual for Project -->
+                     <div
+                        class="text-neo-white font-bold text-4xl opacity-20 transform -rotate-12 group-hover:scale-110 transition-transform">
+                        WEB APP</div>
+                  </div>
+                  <div class="p-6">
+                     <h3 class="text-2xl font-bold uppercase mb-2">Internal Campus Education Web App</h3>
+                     <p class="font-medium mb-4 h-20 overflow-hidden">A web platform designed to facilitate educational
+                        resource sharing and improve student-educator communication within the campus.</p>
+                     <div class="flex gap-2 mb-6">
+                        <span class="text-xs font-bold border border-black px-1 bg-neo-yellow">Web Dev</span>
+                        <span class="text-xs font-bold border border-black px-1 bg-neo-yellow">Education</span>
+                     </div>
+                     <a href="#"
+                        class="block text-center font-bold border-2 border-black py-2 hover:bg-black hover:text-white transition-colors uppercase">View
+                        Details</a>
+                  </div>
+               </div>
+
+               <!-- Project 2 -->
+               <div class="group border-4 border-black bg-white shadow-neo hover:shadow-neo-hover transition-all">
+                  <div
+                     class="h-48 bg-neo-black border-b-4 border-black flex items-center justify-center overflow-hidden">
+                     <!-- Placeholder Visual for Project -->
+                     <div
+                        class="text-neo-white font-bold text-4xl opacity-20 transform rotate-12 group-hover:scale-110 transition-transform">
+                        AUTOMATION</div>
+                  </div>
+                  <div class="p-6">
+                     <h3 class="text-2xl font-bold uppercase mb-2">Color Sorting using PLC</h3>
+                     <p class="font-medium mb-4 h-20 overflow-hidden">An automated sorting system utilizing Arduino,
+                        PLC, and sensors to sort objects based on color, increasing efficiency.</p>
+                     <div class="flex gap-2 mb-6">
+                        <span class="text-xs font-bold border border-black px-1 bg-neo-green">Arduino</span>
+                        <span class="text-xs font-bold border border-black px-1 bg-neo-green">PLC</span>
+                        <span class="text-xs font-bold border border-black px-1 bg-neo-green">Hardware</span>
+                     </div>
+                     <a href="#"
+                        class="block text-center font-bold border-2 border-black py-2 hover:bg-black hover:text-white transition-colors uppercase">View
+                        Details</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-neo-pink">
+         <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white border-4 border-black p-8 md:p-12 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
+               <h2 class="text-4xl md:text-6xl font-bold mb-8 uppercase text-center">Get In Touch</h2>
+               <p class="text-center text-xl font-medium mb-12">Have a project in mind or want to chat about Data
+                  Engineering? Drop me a line!</p>
+
+               <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div class="space-y-2">
+                        <label for="firstname" class="font-bold text-lg uppercase">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required
+                           class="w-full border-4 border-black p-4 font-bold bg-neo-white focus:bg-neo-yellow focus:outline-none transition-colors">
+                     </div>
+                     <div class="space-y-2">
+                        <label for="lastname" class="font-bold text-lg uppercase">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required
+                           class="w-full border-4 border-black p-4 font-bold bg-neo-white focus:bg-neo-yellow focus:outline-none transition-colors">
+                     </div>
+                  </div>
+                  <div class="space-y-2">
+                     <label for="email" class="font-bold text-lg uppercase">Email</label>
+                     <input type="email" id="email" name="email" required
+                        class="w-full border-4 border-black p-4 font-bold bg-neo-white focus:bg-neo-yellow focus:outline-none transition-colors">
+                  </div>
+                  <div class="space-y-2">
+                     <label for="message" class="font-bold text-lg uppercase">Message</label>
+                     <textarea id="message" name="message" rows="5" required
+                        class="w-full border-4 border-black p-4 font-bold bg-neo-white focus:bg-neo-yellow focus:outline-none transition-colors"></textarea>
+                  </div>
+                  <button type="submit"
+                     class="w-full bg-neo-black text-white text-2xl font-bold py-4 border-4 border-black hover:bg-white hover:text-black hover:shadow-neo transition-all uppercase">
+                     Send Message
+                  </button>
+               </form>
+
+               <div class="mt-16 flex flex-wrap justify-center gap-6">
+                  <a href="https://linkedin.com/in/osamabhat" target="_blank"
+                     class="flex items-center gap-2 font-bold text-lg border-2 border-black px-4 py-2 bg-neo-white hover:bg-neo-blue hover:-translate-y-1 transition-transform">
+                     <span class="text-xl">in</span> LinkedIn
+                  </a>
+                  <a href="https://github.com/OsamaBhat" target="_blank"
+                     class="flex items-center gap-2 font-bold text-lg border-2 border-black px-4 py-2 bg-neo-white hover:bg-gray-300 hover:-translate-y-1 transition-transform">
+                     <span class="text-xl">GH</span> GitHub
+                  </a>
+                  <a href="https://twitter.com/osamabhat" target="_blank"
+                     class="flex items-center gap-2 font-bold text-lg border-2 border-black px-4 py-2 bg-neo-white hover:bg-neo-blue hover:-translate-y-1 transition-transform">
+                     <span class="text-xl">X</span> Twitter
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="bg-neo-black text-neo-white py-8 border-t-4 border-black text-center">
+      <p class="font-bold uppercase tracking-widest">© 2025 Osama Umar. Built with Brutal Love.</p>
+   </footer>
+
+   <script src="main.js"></script>
+</body>
+
+</html>
